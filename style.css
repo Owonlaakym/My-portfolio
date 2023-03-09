@@ -1,0 +1,576 @@
+*{
+    text-decoration: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+}
+.container{
+    /* padding-left: 5%; */
+    /* padding-right: 5%; */
+    width: 100%;
+    min-height: 100vh;
+    background-color: #020A24;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    margin-right: 5%;
+}
+.logo{
+    margin-left: 60px;
+    margin-top: 10px;
+    padding-left: 5%;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+    margin-top: 15px;
+}
+nav ul li{
+    display: inline;
+    margin-right: 60px;
+    font-size: small;
+}
+nav ul li:hover{
+    color: crimson;
+    font-size: medium;
+}
+.menu{
+    background-color: white;
+    height: 16px;
+    margin-top: 18px;
+    display: none;
+}
+section{
+    height: 700px;
+}
+section span{
+    color: crimson;
+}
+.head{
+    font-style: italic;
+    width: 100%;
+    height: 48px;
+    padding: 10px;
+    background-color: #6B6666;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.home{
+    position: relative;
+    width: 100%;
+    /* background-color: #020A24; */
+}
+.pic{
+    position: absolute;
+    top: 0;
+    right: 15%;
+    margin-top: 3%;
+}
+.pic img{
+    height: 550px;
+    width: 550px;
+    border-radius: 100px;
+    /* float: right; */
+}
+.hometxt{
+    position: absolute;
+    top: 200px;
+    left: 180px;
+    font-size: 24px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding-left: 40px;
+}
+.hometxt::after{
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: " ";
+    height: 200px;
+    width: 5px;
+    background-color: crimson;
+}
+.hometxt button{
+    background-color: crimson;
+    width: 150px;
+    height: 40px;
+    border-radius: 75px;
+    cursor: pointer;
+}
+.hometxt button:hover{
+    color: #020A24;
+}
+.abouttxt{
+    width: 100%;
+    text-align: center;
+    padding: 20px 200px; 
+    margin-top: 30px;
+}
+.skill{
+    width: 1033px;
+    height: 415px;
+    background-color: rgba(220, 20, 60, 0.759);
+    border-radius: 47px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 8%;
+    padding-right: 5%;
+}
+.col-1{
+    position: relative;
+    flex-basis: 50%;
+}
+.profilepic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 10px;
+    left: 80px;
+}
+.profile{
+    margin-top: 120px;
+    line-height: 30px;
+}
+.profile p{
+    font-size: 15px;
+}
+.profile button{
+    width: 166px;
+    height: 36px;
+    background-color: #020A24;
+    border-radius: 21px;
+    margin-top: 20px;
+    font-size: 10px;
+    border: none;
+}
+.profile button:hover{
+    color: crimson;
+    cursor: pointer;
+    background-color: #031240;
+    cursor: pointer;
+}
+.col-2{
+    flex-basis: 50%;
+    margin-top: 7%;
+}
+.col-2 h2{
+    margin-left: 35%;
+    color: #020A24;
+    margin-bottom: 10%;
+}
+.col-2 .box{
+    width: 100%;
+    /* height: 30px; */
+    /* border-radius: 10px; */
+    background-color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+.skiils{
+    /* padding-top: 10px;
+    padding-bottom: 10px; */
+    color: #020A24;
+}
+.html{
+    width: 90%;
+    background-color: #020A24;
+    text-align: right;
+}
+.css{
+    width: 87%;
+    background-color: #020A24;
+    text-align: right;
+}
+.javascript{
+    width: 20%;
+    background-color: #020A24;
+    text-align: right;
+}
+.word{
+    width: 10%;
+    background-color: #020A24;
+    text-align: right;
+}
+#Portfolio .top{
+    margin: auto;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+#Portfolio .top p{
+    margin-right: 50px;
+    font-size: 10px;
+}
+#Portfolio .top p:hover{
+    color: crimson;
+    cursor: pointer;
+}
+.port-0{
+    display: grid;
+    gap: 20px;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 5%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 200px;
+}
+.port{
+    background-color: white;
+    border-radius: 42px;
+    transition: 1s all;
+    cursor: pointer;
+}
+.port-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+.port-2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+.port-3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.port-4{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.port-5{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.port-6{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.port-7{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.port-8{
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+.port:hover{
+    background-color: crimson;
+    transform: translateY(-10px);
+}
+.grid-3{
+    display: grid;
+    gap: 40px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 260px;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 15%;
+}
+.grid{
+    background-color: crimson;
+    border-radius: 42px;
+}
+.one{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    padding-left: 15%;
+    padding-top: 20%;
+    transition: all 2s;
+    cursor: pointer;
+}
+.two{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    padding-left: 15%;
+    padding-top: 20%;
+    transition: all 2s;
+    cursor: pointer;
+}
+.three{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    padding-left: 15%;
+    padding-top: 20%;
+    transition: all 2s;
+    cursor: pointer;
+}
+.grid-3 img{
+    width: 87px;
+}
+.grid:hover{
+    background-color: white;
+    transform: translateY(-30px);
+}
+/* .my-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 10%;
+}
+.my-info div{
+    width: 330px;
+    height: 50px;
+    border-radius: 14px;
+    background-color: crimson;
+    display: flex;
+    padding-top: 15px;
+}
+.input{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 4%;
+    margin-left: 4%;
+}
+.input input{
+    width: 370px;
+    height: 50px;
+    border-radius: 14px;
+    background-color: crimson;
+    border: none;
+    color: #020A24;
+}
+.message{
+    width: 1244px;
+    height: 201px;
+    background-color: crimson;
+    border-radius: 14px;
+    border: none;
+    margin-top: 15px;
+    margin-right: 4%;
+    margin-left: 4%;
+    color: #020A24;
+}
+#Contact button{
+    margin-top: 20px;
+    width: 150px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: crimson;
+    float: right;
+    margin-right: 4%;
+}
+#Contact button:hover{
+    color: #020A24;
+    background-color: rgb(240, 6, 53);
+}
+.my-info img{
+    width: 20px;
+    height: 25px;
+    margin: 0 10px;
+} */
+.con-me{
+    display: flex;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+.con-me .left{
+    flex-basis: 50%;
+    margin-top: 7%;
+    margin-right: 50px;
+    background-color: rgba(128, 128, 128, 0.182);
+    padding: 20px;
+    border-radius: 5px;
+}
+input, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid black;
+    color: #020A24;
+    border-radius: 10px;
+    /* border: none; */
+}
+input[type=submit]{
+    background-color: crimson;
+    width: 30%;
+    border-radius: 50px;
+    cursor: pointer;
+    border: none;
+}
+input[type=submit]:hover{
+    background-color: rgba(220, 20, 60, 0.959);
+    color: white;
+}
+.con-me .right{
+    flex-basis: 50%;
+    margin-top: 13%;
+}
+footer{
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    line-height: 35px;
+    padding-top: 30px;
+}
+footer h2{
+    color: black;
+    font-style: bold;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-align: center;
+    /* padding-left: 37%; */
+}
+footer p{
+    color: black;
+    font-size: 15px;
+    text-align: center;
+    /* padding-left: 40%; */
+}
+.social{
+     padding-left: 44%;
+
+}
+.social img{
+    margin-right: 10px;
+}
+footer small p{
+    font-size: xx-small;
+    color: black;
+    text-align: center;
+    /* padding-left: 43%; */
+}
+/* .change{
+    position: absolute;
+    top: 600px;
+    right: 30px;
+    background-color: gray;
+    color: black;
+    padding: 10px;
+    border-radius: 8px;
+} */
+
+@media screen and (max-width: 500px) {
+    .menu{
+        display: flex;
+        margin-right: 10%;
+    }
+    .container{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    nav{
+        margin-right: 0%;
+    }
+    .logo{
+        margin-left: 0px;
+        padding-left: 10px;
+    }
+    nav ul li{
+        display: none;
+        margin-right: 0px;
+    }
+    section{
+        height: 1000px;
+    }
+    .head{
+        width: 100%;
+    }
+    .pic{
+        width: 100%;
+        right: 0;
+        top: 44%;
+    }
+    .pic img{
+        width: 100%;
+        height: 400px;
+    }
+    .hometxt{
+        top: 100px;
+        left: 25px;
+        font-size: 18px;
+        letter-spacing: 0px;
+        line-height: 40px;
+    }
+    .abouttxt{
+        width: 100%;
+        padding: 0;
+    }
+    .skill{
+        width: 100%;
+        height: 690px;
+        display: block;
+        margin-top: 20px;
+    }
+    .profile{
+        flex-basis: 100%;
+        padding-top: 35%;
+        margin-top: 0;
+    }
+    .col-1{
+        flex-basis: 100%;
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-top: 40px;
+    }
+    .profile button{
+        margin-top: 7%;
+    }
+    #Portfolio .top{
+        width: 50%;
+    }
+    #Portfolio .top p{
+        margin-right: 2%;
+    }
+    .port-0{
+        display: grid;
+        padding-left: 25%;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 200px 200px;
+    }
+    .port-1{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .port-2{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .port-3{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .port-4{
+        grid-column: 1/2;
+        grid-row: 4/5;
+    }
+
+    .grid-3{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 200px 200px 200px;
+        margin-top: 20%;
+    }
+    .one{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .two{
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .three{
+        grid-column: 1/2;
+        grid-row: 3/4;
+    }
+    .con-me{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 2%;
+    }
+    .con-me .left{
+        flex-basis: 100%;
+        width: 100%;
+    }
+    .social{
+        padding-left: 30%;
+    }
+
+    
+}
